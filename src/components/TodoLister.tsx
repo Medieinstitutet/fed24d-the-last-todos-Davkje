@@ -1,17 +1,19 @@
-import { Todo } from "../models/Todo"
+import { Todo } from "../models/Todo";
 import { TodoPresenter } from "./TodoPresenter";
 
 type TodoProps = {
-  todos: Todo[];
-}
+	todos: Todo[];
+	onToggle: (id: number, checked: boolean) => void;
+  onDelete: (id: number) => void;
+};
 
-export const TodoLister = ({ todos }: TodoProps) => {
-  return (
-    <div className="container">
-      <h2>Todo List</h2>
-      {todos.map((todo, index) => (
-        <TodoPresenter key={index} todo={todo}></TodoPresenter>
-      ))}
-    </div>
-  );
+export const TodoLister = ({ todos, onToggle, onDelete}: TodoProps) => {
+	return (
+		<div className="container">
+			<h2>Todo List</h2>
+			{todos.map((todo) => (
+				<TodoPresenter key={todo.id} todo={todo} onToggle={onToggle} onDelete={onDelete}/>
+			))}
+		</div>
+	);
 };

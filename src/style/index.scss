@@ -172,7 +172,7 @@ select {
 
 input[type='checkbox'] {
   accent-color: var(--color-text);
-  margin: auto;
+  // margin: auto;
   aspect-ratio: 1 / 1;
   width: clamp(16px, 4vw, 26px);
 }
