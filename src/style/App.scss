@@ -22,9 +22,10 @@
 }
 
 .wrapper {
-  max-width: 1280px;
+  width: 100%;
   padding: 1rem;
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -37,12 +38,25 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
-  height: 100%;
 
   /* Gradient border trick */
   background: linear-gradient(var(--color-background), var(--color-background)) padding-box, var(--color-border-gradient) border-box;
   border: 2px solid transparent;
 
+  height: 100%;
+}
+
+.todo-container {
+  background-image: var(--color-background-gradient);
+  width: clamp(3vw, 500px, 50vw);
+  border-radius: .5rem;
+  padding: .5rem;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
 }
 
 form {
@@ -58,6 +72,6 @@ label {
   gap: .5rem;
 }
 
-.material-icons {
-  margin: auto;
-}
+// .material-icons {
+//   margin: auto;
+// }
