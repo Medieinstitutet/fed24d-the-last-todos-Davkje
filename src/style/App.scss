@@ -60,6 +60,19 @@
   gap: .5rem;
 }
 
+.form-container {
+  background-image: var(--color-background-gradient);
+  width: clamp(3vw, 500px, 50vw);
+  border-radius: .5rem;
+  padding: .5rem;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
 form {
   display: grid;
   grid-template-columns: repeat(8, 1fr);

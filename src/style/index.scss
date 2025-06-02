@@ -14,11 +14,11 @@
   --c-white-trans: rgba(255, 255, 255, 0.3);
   --c-white-gradient: linear-gradient(to bottom, var(--c-white), var(--c-white-soft));
 
-  --c-black: #181818;
-  --c-black-soft: #1a1a1a;
-  --c-black-mute: #1f1f1f;
+  --c-black: #151515;
+  --c-black-soft: #171717;
+  --c-black-mute: #2a2a2c;
   --c-black-trans: rgba(0, 0, 0, 0.3);
-  --c-black-gradient: linear-gradient(to bottom, var(--c-black-mute), var(--c-black));
+  --c-black-gradient: linear-gradient(to bottom, var(--c-black-mute), var(--c-black-soft));
 
   --c-primary: rgb(72, 85, 203);
   --c-secondary: rgb(82, 97, 237);
