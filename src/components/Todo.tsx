@@ -1,7 +1,7 @@
 export const Todo = () => {
 	return (
-		<div>
-			<h2>Todo</h2>
-		</div>
+		<>
+			<h1>Todo</h1>
+		</>
 	);
 };

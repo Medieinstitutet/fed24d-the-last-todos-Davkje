@@ -2,10 +2,11 @@ import "./style/App.css";
 import { Todo } from "./components/Todo";
 
 function App() {
-  return 
-    <>
-      <Todo></Todo>
-    </>;
+	return (
+		<>
+			<Todo></Todo>
+		</>
+	);
 }
 
 export default App;
