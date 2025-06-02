@@ -1,10 +1,14 @@
-import "./style/App.css";
+import "./style/App.scss";
 import { Todo } from "./components/Todo";
+import { Header } from "./components/Header";
 
 function App() {
 	return (
 		<>
-			<Todo></Todo>
+			<Header />
+			<div className="wrapper">
+				<Todo/>
+			</div>
 		</>
 	);
 }
