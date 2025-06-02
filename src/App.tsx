@@ -1,7 +1,11 @@
-import "./App.css";
+import "./style/App.css";
+import { Todo } from "./components/Todo";
 
 function App() {
-  return <></>;
+  return 
+    <>
+      <Todo></Todo>
+    </>;
 }
 
 export default App;
