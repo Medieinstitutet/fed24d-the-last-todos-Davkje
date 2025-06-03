@@ -57,7 +57,7 @@ const App = () => {
 				<AddTodoForm addTodo={addTodo}></AddTodoForm>
 				<SortSelector sortBy={sortBy} setSortBy={setSortBy}></SortSelector>
 				<TodoLister todos={sortedTodos} onToggle={updateTodoIsDone} onDelete={deleteTodo}></TodoLister>
-				<p>{JSON.stringify(todos, null, 2)}</p>
+				{/* <p>{JSON.stringify(todos, null, 2)}</p> */}
 			</div>
 		</>
 	);

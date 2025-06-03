@@ -19,7 +19,7 @@ export const TodoPresenter = ({ todo, onToggle, onDelete }: TodoProps) => {
 	return (
 		<div className="todo-container">
 			<h2>{todo.name}</h2>
-			<p>{todo.id}</p>
+			{/* <p>{todo.id}</p> */}
 			<label>
 				{todo.isDone ? "Done" : "Not Done"}
 				<input type="checkbox" id="isDone" checked={todo.isDone} onChange={handleChange} />

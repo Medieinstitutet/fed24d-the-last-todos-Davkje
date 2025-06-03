@@ -6,7 +6,8 @@ type SortSelectorProps = {
 export const SortSelector = ({ sortBy, setSortBy }: SortSelectorProps) => {
 	return (
 		<div className="container">
-			<label htmlFor="sort">Sort by:</label>
+			<h2>Sort Todos</h2>
+			<label htmlFor="sort">Sort By</label>
 			<select id="sort" value={sortBy} onChange={(e) => setSortBy(e.target.value as SortSelectorProps["sortBy"])}>
 				<option value="name-asc">Name A-Z</option>
 				<option value="name-desc">Name Z-A</option>

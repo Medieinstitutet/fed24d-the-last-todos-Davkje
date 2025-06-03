@@ -25,7 +25,7 @@ export const AddTodoForm = ({ addTodo }: AddTodoFormProps) => {
       <h2>Add todo</h2>
 			<form className="form-container" onSubmit={handleSubmit}>
 				<label htmlFor="name">Name</label>
-        <input name="name" type="text" placeholder="Todo" value={todo.name} onChange={handleChange} required/>
+        <input id="name" name="name" type="text" placeholder="Todo" value={todo.name} onChange={handleChange} required/>
 				<button type="submit">Add</button>
 			</form>
 		</div>
