@@ -10,10 +10,11 @@ export const AddTodoForm = ({ addTodo }: AddTodoFormProps) => {
 
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setTodo({ ...todo, [e.target.id]: e.target.value});
+    setTodo({ ...todo, [e.target.name]: e.target.value});
   };
 
   const handleSubmit = (e: FormEvent) => {
+    if (todo.name.trim() === "") return;
     e.preventDefault();
     addTodo(todo);
     setTodo(new Todo("", false)); // Reset the form after submission
@@ -24,7 +25,7 @@ export const AddTodoForm = ({ addTodo }: AddTodoFormProps) => {
       <h2>Add todo</h2>
 			<form className="form-container" onSubmit={handleSubmit}>
 				<label htmlFor="name">Name</label>
-        <input id="name" type="text" placeholder="Todo" value={todo.name} onChange={handleChange}/>
+        <input name="name" type="text" placeholder="Todo" value={todo.name} onChange={handleChange} required/>
 				<button type="submit">Add</button>
 			</form>
 		</div>
