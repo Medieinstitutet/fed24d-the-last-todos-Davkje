@@ -4,6 +4,7 @@ import { useState } from "react";
 import { TodoLister } from "./components/TodoLister";
 import { Todo } from "./models/Todo";
 import { AddTodoForm } from "./components/AddTodoForm";
+import { SortSelector } from "./components/SortSelector";
 
 const App = () => {
 	// TODO LOCAL STORAGE
@@ -16,6 +17,9 @@ const App = () => {
 
 	// TODO STATE
 	const [todos, setTodos] = useState<Todo[]>(savedTodos ? (JSON.parse(savedTodos) as Todo[]) : defaultTodos);
+
+	// SORT STATE
+	const [sortBy, setSortBy] = useState<"name-asc" | "name-desc" | "status">("name-asc");
 
 	// TODO FUNCTIONS
 	const addTodo = (todo: Todo) => {
@@ -35,12 +39,24 @@ const App = () => {
 		localStorage.setItem("todos", JSON.stringify(updatedTodos));
 	};
 
+	const sortedTodos = [...todos].sort((a, b) => {
+		if (sortBy === "name-asc") {
+			return a.name.localeCompare(b.name);
+		} else if (sortBy === "name-desc") {
+			return b.name.localeCompare(a.name);
+		} else if (sortBy === "status") {
+			return Number(a.isDone) - Number(b.isDone);
+		}
+		return 0;
+	});
+
 	return (
 		<>
 			<Header />
 			<div className="wrapper">
 				<AddTodoForm addTodo={addTodo}></AddTodoForm>
-				<TodoLister todos={todos} onToggle={updateTodoIsDone} onDelete={deleteTodo}></TodoLister>
+				<SortSelector sortBy={sortBy} setSortBy={setSortBy}></SortSelector>
+				<TodoLister todos={sortedTodos} onToggle={updateTodoIsDone} onDelete={deleteTodo}></TodoLister>
 				<p>{JSON.stringify(todos, null, 2)}</p>
 			</div>
 		</>
