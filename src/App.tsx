@@ -1,4 +1,4 @@
-import "./style/App.scss";
+import "./style/App.css";
 import { Header } from "./components/Header";
 import { useState } from "react";
 import { TodoLister } from "./components/TodoLister";
@@ -53,11 +53,10 @@ const App = () => {
 	return (
 		<>
 			<Header />
-			<div className="wrapper">
+			<div className="wrapper w-full max-w-4xl p-4 flex flex-col justify-center items-center gap-4">
 				<AddTodoForm addTodo={addTodo}></AddTodoForm>
 				<SortSelector sortBy={sortBy} setSortBy={setSortBy}></SortSelector>
 				<TodoLister todos={sortedTodos} onToggle={updateTodoIsDone} onDelete={deleteTodo}></TodoLister>
-				{/* <p>{JSON.stringify(todos, null, 2)}</p> */}
 			</div>
 		</>
 	);

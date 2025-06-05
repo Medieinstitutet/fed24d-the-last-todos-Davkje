@@ -1,4 +1,4 @@
-#root {
+/* #root {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -68,10 +68,6 @@
 }
 
 .form-container {
-  // width: clamp(3vw, 500px, 50vw);
-  // background-image: var(--color-background-gradient);
-  // padding: .5rem;
-  // box-shadow: 0 2px 8px var(--color-shadow);
   width: 100%;
   border-radius: .5rem;
   display: flex;
@@ -112,4 +108,4 @@ label {
       }
     }
   }
-}
+} */

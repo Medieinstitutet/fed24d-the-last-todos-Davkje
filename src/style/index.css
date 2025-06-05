@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 *,
 *::before,
 *::after {
@@ -6,7 +8,9 @@
   font-weight: normal;
 }
 
+
 /* Color palette */
+/*  
 :root {
   --c-white: #ffffff;
   --c-white-soft: #f7f7f7;
@@ -28,14 +32,14 @@
   --c-red: #f54438;
   --c-yellow: #e6e17c;
 
-  // Text
+
   --c-text-light-1: var(--c-black);
   --c-text-light-2: var(--c-blak-soft);
 
   --c-text-dark-1: var(--c-white);
   --c-text-dark-2: var(--c-white-mute);
 
-  // Dividers
+
   --c-div-light-1: rgba(80, 80, 80, .25);
   --c-div-light-2: rgba(60, 60, 60, .1);
 
@@ -45,8 +49,9 @@
   --c-div-grad-light: linear-gradient(to bottom, var(--c-div-light-2), var(--c-div-light-1));
   --c-div-grad-dark: linear-gradient(to bottom, var(--c-div-dark-1), var(--c-div-dark-2));
 }
+*/
 
-/* Colors Dark Mode */
+/* Colors Dark Mode 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--c-black);
@@ -172,7 +177,6 @@ select {
 
 input[type='checkbox'] {
   accent-color: var(--color-text);
-  // margin: auto;
   aspect-ratio: 1 / 1;
   width: clamp(16px, 4vw, 26px);
 }
@@ -184,3 +188,4 @@ ul {
 li {
   list-style: none;
 }
+*/
