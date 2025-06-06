@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+
+/* Color palette */
+/*  
+:root {
+  --c-white: #ffffff;
+  --c-white-soft: #f7f7f7;
+  --c-white-mute: #ededed;
+  --c-white-trans: rgba(255, 255, 255, 0.3);
+  --c-white-gradient: linear-gradient(to bottom, var(--c-white), var(--c-white-soft));
+
+  --c-black: #151515;
+  --c-black-soft: #171717;
+  --c-black-mute: #2a2a2c;
+  --c-black-trans: rgba(0, 0, 0, 0.3);
+  --c-black-gradient: linear-gradient(to bottom, var(--c-black-mute), var(--c-black-soft));
+
+  --c-primary: rgb(72, 85, 203);
+  --c-secondary: rgb(82, 97, 237);
+
+  --c-green: #3fc362;
+  --c-blue: #2683e7;
+  --c-red: #f54438;
+  --c-yellow: #e6e17c;
+
+
+  --c-text-light-1: var(--c-black);
+  --c-text-light-2: var(--c-blak-soft);
+
+  --c-text-dark-1: var(--c-white);
+  --c-text-dark-2: var(--c-white-mute);
+
+
+  --c-div-light-1: rgba(80, 80, 80, .25);
+  --c-div-light-2: rgba(60, 60, 60, .1);
+
+  --c-div-dark-1: rgba(130, 130, 130, 0.7);
+  --c-div-dark-2: rgba(125, 125, 125, .3);
+
+  --c-div-grad-light: linear-gradient(to bottom, var(--c-div-light-2), var(--c-div-light-1));
+  --c-div-grad-dark: linear-gradient(to bottom, var(--c-div-dark-1), var(--c-div-dark-2));
+}
+*/
+
+/* Colors Dark Mode 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--c-black);
+    --color-background-soft: var(--c-black-soft);
+    --color-background-mute: var(--c-black-mute);
+    --color-background-gradient: var(--c-black-gradient);
+    --color-shadow: var(--c-black-trans);
+
+    --color-border: var(--c-div-dark-1);
+    --color-border-2: var(--c-div-dark-2);
+    --color-border-gradient: var(--c-div-grad-dark);
+
+    --color-heading: var(--c-text-dark-1);
+    --color-text: var(--c-text-dark-1);
+    --color-text-mute: var(--c-text-dark-2);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--c-white);
+    --color-background-soft: var(--c-white-soft);
+    --color-background-mute: var(--c-white-mute);
+    --color-background-gradient: var(--c-white-gradient);
+    --color-shadow: var(--c-div-light-1);
+
+    --color-border: var(--c-div-light-2);
+    --color-border-2: var(--c-div-light-1);
+    --color-border-gradient: var(--c-div-grad-light);
+
+    --color-heading: var(--c-text-light-1);
+    --color-text: var(--c-text-light-1);
+    --color-text-mute: var(--c-text-light-2);
+  }
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--c-primary);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--c-secondary);
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-background-mute);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+}
+
+button:hover {
+  border-color: var(--c-primary);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+input,
+select {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-background-mute);
+}
+
+input[type='checkbox'] {
+  accent-color: var(--color-text);
+  aspect-ratio: 1 / 1;
+  width: clamp(16px, 4vw, 26px);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+*/

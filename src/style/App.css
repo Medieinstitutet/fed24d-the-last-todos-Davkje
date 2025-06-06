@@ -1,0 +1,111 @@
+/* #root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-container {
+  width: 100%;
+  background-color: var(--color-background-mute);
+  border-bottom: solid 2px var(--color-border-2);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5rem;
+
+  background: linear-gradient(var(--color-background), var(--color-background)) padding-box, var(--color-border-gradient) border-box;
+  border: 2px solid transparent;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.todo-container {
+  background-image: var(--color-background-gradient);
+  flex: 1 1 clamp(3vw, 450px, 70vw);
+  border-radius: .5rem;
+  padding: .5rem;
+  box-shadow: 0 2px 8px var(--color-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.form-container {
+  width: 100%;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+label {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: .5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    .container {
+      grid-column: span 2;
+      &:nth-child(2n) {
+        justify-content:space-between;
+      }
+      &:nth-child(3) {
+        grid-column: span 4;
+      }
+    }
+  }
+} */
